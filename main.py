@@ -5,3 +5,10 @@ def juego_laberinto(laberinto):  # Función que calcula los movimientos necesari
     inicio = (0, 0, 'h')  # Posición de inicio con orientación horizontal
     cola = [(inicio, 0)]  # Lista para almacenar las posiciones y movimientos
     visitado = []  # Lista para registrar las posiciones visitadas
+
+
+    while cola:
+        posicion, movimientos = cola.pop(0)  # Uso pop(0) para eliminar el primer elemento (como cola)
+
+        x, y, orientacion = posicion  # Extraigo las coordenadas y la orientación
+
