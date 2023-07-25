@@ -12,3 +12,22 @@ def juego_laberinto(laberinto):  # Función que calcula los movimientos necesari
 
         x, y, orientacion = posicion  # Extraigo las coordenadas y la orientación
 
+        if x == filas - 1 and y == columnas - 1:  # Si llegué al final, retorno la cantidad de movimientos
+            return movimientos
+
+        visitado.append((x, y, orientacion))  # Agrego la posición actual a la lista de visitadas
+
+        # Explorar movimientos horizontales
+        if orientacion == 'h':{}
+        #nuevo_x, nuevo_y
+
+        # Explorar movimientos verticales
+        elif orientacion == 'v':{}
+        # nuevo_x, nuevo_y
+
+
+        # Cambiar la orientación del rod
+        nueva_orientacion = 'v' if orientacion == 'h' else 'h'
+
+
+    return -1  # Si no puede llegar al final, retorno -1
